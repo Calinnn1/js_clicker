@@ -1,21 +1,31 @@
-function Counter(valor) {
+const clickingArea = document.getElementById('clickingArea')
+const counter = document.getElementById('counter')
+const buttonIncrementClickValue = document.getElementsByClassName('increment-click-value')[0]
+const buttonIdleClickValue = document.getElementsByClassName('idle-click')[0]
+const clickPowerDisplay = document.getElementById('clickPower')
 
-    var ClickerButton = 0;
-    ClickerButton += 1;
-    if (valor >= 20) {
-        return IncrementClickValue;
-    } else if (valor >= 50) {
-        return IdleClick;
-    }
-    document.getElementById("number").innerHTML = ClickerButton;
+let clickValue = 0
+let clickPower = 1
+
+counter.innerHTML = clickValue
+
+clickingArea.addEventListener('click', incrementOnClik)
+
+function incrementOnClik() {
+  clickValue += clickPower
+  counter.innerHTML = clickValue
+
+  if (clickValue >= 5) {
+    buttonIncrementClickValue.classList.add('button-active-class')
+    buttonIncrementClickValue.addEventListener('click', increaseClickPower)
+  }
+
+  if (clickValue >= 10) {
+    buttonIdleClickValue.classList.add('button-active-class')
+  }
 }
 
-
-
-
-/* var
-if (ClickerButton >= 20) {
-    return IncrementClickValue;
-} else (ClickerButton >= 50); {
-    return IdleClick;
-} */
+function increaseClickPower () {
+  clickPower++
+  clickPowerDisplay.innerHTML = clickPower
+}

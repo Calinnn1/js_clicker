@@ -16,7 +16,7 @@ font-family: sans-serif;
     transform: translateY(-50%);
 }
 
-.Counter {
+.counter {
     width: calc(260px - 30px);
     height: calc(75px - 30px);
     transform: translateY(75%);
@@ -25,9 +25,10 @@ font-family: sans-serif;
     background: white;
     border: 1px solid black;
     color: rgb(78, 78, 78);
+    line-height: calc(75px - 30px);
 }
 
-.Clicking_area {
+.clicking_area {
     width: calc(260px - 30px);
     height: calc(175px - 30px);
     margin: 25px;
@@ -37,9 +38,10 @@ font-family: sans-serif;
     cursor: pointer;
     color: rgb(78, 78, 78);
     float: left;
+    line-height: calc(175px - 30px);
 }
 
-.Increment_Click_Value {
+.increment-click-value {
     width: calc(215px - 30px);
     height: calc(99px - 30px);
     transform: translateY(30%);
@@ -49,15 +51,17 @@ font-family: sans-serif;
     border: 1px solid black;
     color: rgb(78, 78, 78);
     float: left;
+    line-height: calc(99px - 30px);
 }
 
-.Increment_Click_Value:hover {
-    background: black;
-    color: white;
+.button-active-class {
+    background: black !important;
+    color: white !important;
+    cursor: pointer !important;
 }
 
 
-.Idle_Click {
+.idle-click {
     width: calc(215px - 30px);
     height: calc(94px - 30px);
     transform: translateY(31%);
@@ -67,4 +71,5 @@ font-family: sans-serif;
     border: 1px solid black;
     color: rgb(78, 78, 78);
     float: left;
+    line-height: calc(94px - 30px);
 }
