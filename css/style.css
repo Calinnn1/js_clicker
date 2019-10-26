@@ -1,0 +1,70 @@
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+.container {
+    width: 550px;
+    height: 200px;
+    margin: 250px auto;
+    display: table;
+    background: lightgray;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Counter {
+    width: calc(260px - 30px);
+    height: calc(75px - 30px);
+    transform: translateY(75%);
+    margin: 25px;
+    display: table;
+    background: white;
+    border: 1px solid black;
+    color: rgb(78, 78, 78);
+}
+
+.Clicking_area {
+    width: calc(260px - 30px);
+    height: calc(175px - 30px);
+    margin: 25px;
+    display: table;
+    background: tomato;
+    border: 1px solid black;
+    cursor: pointer;
+    color: rgb(78, 78, 78);
+    float: left;
+}
+
+.Increment_Click_Value {
+    width: calc(215px - 30px);
+    height: calc(99px - 30px);
+    transform: translateY(30%);
+    margin: 5px;
+    display: table;
+    background: rgb(179, 176, 176);
+    border: 1px solid black;
+    color: rgb(78, 78, 78);
+    float: left;
+}
+
+.Increment_Click_Value:hover {
+    background: black;
+    color: white;
+}
+
+
+.Idle_Click {
+    width: calc(215px - 30px);
+    height: calc(94px - 30px);
+    transform: translateY(31%);
+    margin: 5px;
+    display: table;
+    background: rgb(179, 176, 176);
+    border: 1px solid black;
+    color: rgb(78, 78, 78);
+    float: left;
+}
